@@ -14,50 +14,33 @@
   <body class="container font-weight-light">
     <!-- Headline and navigation -->
 
-    <header class="row bg-white sticky-top">
-      <h1 class="col-12 col-md-2 font-weight-lighter">Svenja Widegreen</h1>
-      <nav
-        class="col-12 col-md-10 navbar navbar-expand-lg navbar-light bg-light"
-      >
-        <a class="navbar-brand" href="#">Menu</a>
+    <header class="bg-white sticky-top">
+      <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <a class="navbar-brand font-weight-lighter h1" href="#"
+          >Svenja Widegreen</a
+        >
         <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#contact"
-                >Contact <span class="sr-only"></span
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact"
-                >Skills <span class="sr-only"></span
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-me">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact"
-                >CV <span class="sr-only"></span
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact"
-                >Impressum <span class="sr-only"></span
-              ></a>
-            </li>
-          </ul>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+            <a class="nav-item nav-link" href="#contact">Contact</a>
+            <a class="nav-item nav-link" href="#about-me">About me</a>
+            <a class="nav-item nav-link" href="#cv">CV</a>
+            <a class="nav-item nav-link" href="#impressum">Impressum</a>
+          </div>
         </div>
       </nav>
     </header>
@@ -65,7 +48,7 @@
       <!-- Picture and description -->
 
       <div class="row">
-        <section class="col-12 col-md-6 col-lg-4 card border-white">
+        <section class="col-12 col-sm-6 col-lg-4 card border-white my-3">
           <img
             class="img-fluid card-img-top rounded-circle"
             src="/img/svenja_2020.jpg"
@@ -78,7 +61,10 @@
 
         <!-- Skills -->
 
-        <section class="col-12 col-md-6 col-lg-8 align-self-center my-3">
+        <section
+          id="skills"
+          class="col-12 col-sm-6 col-lg-8 align-self-center my-3"
+        >
           <!-- programming skills -->
           <h4 class="font-weight-light ml-1">Bootcamp skills</h4>
           <div class="d-flex flex-wrap">
@@ -123,7 +109,10 @@
 
       <!-- contact -->
 
-      <address class="bg-light border border-light border-rounded-lg p-2 my-3">
+      <address
+        id="contact"
+        class="bg-light border border-light border-rounded-lg p-2 my-3"
+      >
         <h4 class="font-weight-light">Contact information</h4>
         <div class="d-flex flex-wrap">
           <a
@@ -151,8 +140,7 @@
 
       <section class="row border-white">
         <div
-          class="col-12 col-sm-6 col-md-3 card border-white align-self-center"
-          style="width: 200px;"
+          class="col-6 col-sm-6 col-md-3 card border-white align-self-center"
         >
           <img
             class="img-fluid flex-fill card-img-top"
@@ -165,13 +153,12 @@
               href="https://github.com/sv-widegreen/"
               target="_blank"
               rel="noopener noreferrer"
-              >my GitHub</a
+              >GitHub</a
             >
           </div>
         </div>
         <div
-          class="col-12 col-sm-6 col-md-3 card border-white align-self-center"
-          style="width: 200px;"
+          class="col-6 col-sm-6 col-md-3 card border-white align-self-center"
         >
           <img
             class="img-fluid flex-fill card-img-top"
@@ -184,13 +171,12 @@
               href="https://codepen.io/svenjaw"
               target="_blank"
               rel="noopener noreferrer"
-              >my CodePen</a
+              >CodePen</a
             >
           </div>
         </div>
         <div
-          class="col-12 col-sm-6 col-md-3 card border-white align-self-center"
-          style="width: 200px;"
+          class="col-6 col-sm-6 col-md-3 card border-white align-self-center"
         >
           <img
             class="img-fluid flex-fill card-img-top"
@@ -203,13 +189,12 @@
               href="https://de.linkedin.com/in/svenja-widegreen-a1319632"
               target="_blank"
               rel="noopener noreferrer"
-              >my LinkedIn</a
+              >LinkedIn</a
             >
           </div>
         </div>
         <div
-          class="col-12 col-sm-6 col-md-3 card border-white align-self-center"
-          style="width: 200px;"
+          class="col-6 col-sm-6 col-md-3 card border-white align-self-center"
         >
           <img
             class="img-fluid flex-fill card-img-top"
@@ -222,7 +207,7 @@
               href="#"
               target="_blank"
               rel="noopener noreferrer"
-              >my Indeed</a
+              >Indeed</a
             >
           </div>
         </div>
@@ -231,47 +216,69 @@
       <!-- About me -->
 
       <article class="row my-3">
-        <section class="col-12 col-md-6">
-          <h4 class="font-weight-light">About me</h4>
-          <p>Looking for new challenges.</p>
-          <p class="text-justify">
-            After spending 14 years doing something fun, I'm now looking forward
-            to doing something meaningful and sustainable as well. And actually
-            earn some money.
-          </p>
+        <section id="about-me" class="col-12 col-lg-4 text-justify mt-3">
+          <div class="bg-light p-3">
+            <h4 class="font-weight-light">About me</h4>
+            <p>Looking for new challenges.</p>
+            <p>
+              After spending 14 years doing something fun, I'm now looking
+              forward to doing something meaningful and sustainable as well. And
+              actually earn some money.
+            </p>
+          </div>
         </section>
 
         <!-- CV -->
 
-        <section class="col-12 col-md-6">
-          <h4 class="font-weight-light">CV</h4>
-          <div class="border border-light border-rounded">
-            <p class="lead mb-0">Web Development Bootcamp neuefische GmbH</p>
-            <p><small>2020</small></p>
-            <p>
-              Intensive study programme of all the programming skills above
-            </p>
-          </div>
-          <div class="border border-light border-rounded">
-            <p class="lead mb-0">Freelance Filmproducer</p>
-            <p><small>2017-now</small></p>
-            <p>
-              Project Management of international commercial film productions
-            </p>
-          </div>
-          <div class="border border-light border-rounded">
-            <p class="lead mb-0">Film Productions</p>
-            <p><small>2007-2017</small></p>
-            <p>From Runner to Line Producer for various film productions</p>
-          </div>
-          <div class="border border-light border-rounded">
-            <p class="lead mb-0">BSc Media Technology</p>
-            <p><small>2006-2012</small></p>
-            <p>University of Applied Sciences Hamburg</p>
+        <section id="cv" class="col-12 col-lg-8 mt-3">
+          <div class="bg-light p-3">
+            <h4 class="font-weight-light">CV</h4>
+            <div
+              class="border border-white border-rounded-lg mt-2 p-2 bg-white"
+            >
+              <p class="lead mb-0 border-bottom border-light">
+                Web Development Bootcamp neuefische GmbH
+              </p>
+              <p><small>2020</small></p>
+              <p class="mb-0">
+                Intensive study programme of all the programming skills above
+              </p>
+            </div>
+            <div
+              class="border border-white border-rounded-lg mt-2 p-2 bg-white"
+            >
+              <p class="lead mb-0 border-bottom border-light">
+                Freelance Filmproducer
+              </p>
+              <p><small>2017-now</small></p>
+              <p class="mb-0">
+                Project Management of international commercial film productions
+              </p>
+            </div>
+            <div
+              class="border border-white border-rounded-lg mt-2 p-2 bg-white"
+            >
+              <p class="lead mb-0 border-bottom border-light">
+                Film Productions
+              </p>
+              <p><small>2007-2017</small></p>
+              <p class="mb-0">
+                From Runner to Line Producer for various film productions
+              </p>
+            </div>
+            <div
+              class="border border-white border-rounded-lg mt-2 p-2 bg-white"
+            >
+              <p class="lead mb-0 border-bottom border-light">
+                BSc Media Technology
+              </p>
+              <p><small>2006-2012</small></p>
+              <p class="mb-0">University of Applied Sciences Hamburg</p>
+            </div>
           </div>
         </section>
       </article>
     </main>
-    <footer class="row"></footer>
+    <footer id="impressum" class="row">&copy; Svenja Widegreen 2020</footer>
   </body>
 </html>
