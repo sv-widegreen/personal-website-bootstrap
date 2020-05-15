@@ -12,21 +12,85 @@
   </head>
 
   <body class="container">
+    <!-- Headline and navigation -->
+
     <header>
-      <h1 class="text-muted">Svenja Widegreen</h1>
-      <nav>
-        <a class="text-info" href="#contact">contact</a>
-        <a class="text-info" href="#about-me">about me</a>
+      <h1>Svenja Widegreen</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#contact"
+                >Contact <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About-me</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
+      <!-- Picture and description -->
       <section>
         <img
           class="img-fluid rounded-circle"
           src="/img/svenja_2020.jpg"
           alt="svenja in favorite green shirt and smiling into camera"
         />
-        <p>Soon to be Web Devoloper based in Hamburg, Germany</p>
+        <p>Hopefull soon-to-be Web Devoloper based in Hamburg, Germany</p>
+      </section>
+
+      <!-- Skills -->
+
+      <section>
+        <!-- programming skills -->
+        <h4>Programming skills</h4>
+        <div>
+          <button type="button" class="btn btn-success btn-sm">
+            Basic HTML
+          </button>
+          <button type="button" class="btn btn-success btn-sm">
+            GitHub novice
+          </button>
+          <button type="button" class="btn btn-success btn-sm">
+            Bit of Bootstrap
+          </button>
+          <button type="button" class="btn border btn-sm">
+            JavaScript
+          </button>
+        </div>
+
+        <!-- other skills -->
+        <h4>Other skills</h4>
+        <div>
+          <button type="button" class="btn btn-success btn-sm">
+            Project management
+          </button>
+          <button type="button" class="btn btn-success btn-sm">
+            Coffee drinker
+          </button>
+          <button type="button" class="btn btn-success btn-sm">
+            Wellness pro
+          </button>
+          <button type="button" class="btn border btn-sm">
+            Water drinker
+          </button>
+        </div>
       </section>
     </main>
     <footer class="row"></footer>
