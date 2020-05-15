@@ -14,9 +14,11 @@
   <body class="container font-weight-light">
     <!-- Headline and navigation -->
 
-    <header>
-      <h1 class="font-weight-lighter">Svenja Widegreen</h1>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="row bg-white sticky-top">
+      <h1 class="col-12 col-md-2 font-weight-lighter">Svenja Widegreen</h1>
+      <nav
+        class="col-12 col-md-10 navbar navbar-expand-lg navbar-light bg-light"
+      >
         <a class="navbar-brand" href="#">Menu</a>
         <button
           class="navbar-toggler"
@@ -32,95 +34,126 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#contact"
                 >Contact <span class="sr-only"></span
               ></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about-me">About-me</a>
+              <a class="nav-link" href="#contact"
+                >Skills <span class="sr-only"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                >CV <span class="sr-only"></span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"
+                >Impressum <span class="sr-only"></span
+              ></a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="mt-3">
       <!-- Picture and description -->
 
-      <section class="card border-white">
-        <img
-          class="img-fluid card-img-top rounded-circle"
-          src="/img/svenja_2020.jpg"
-          alt="svenja in favorite green shirt and smiling into camera"
-        />
-        <div class="card-body text-center">
-          Prospective Web Devoloper based in Hamburg, Germany
-        </div>
-      </section>
+      <div class="row">
+        <section class="col-12 col-md-6 col-lg-4 card border-white">
+          <img
+            class="img-fluid card-img-top rounded-circle"
+            src="/img/svenja_2020.jpg"
+            alt="svenja in favorite green shirt and smiling into camera"
+          />
+          <div class="card-body text-center">
+            Prospective Web Devoloper based in Hamburg, Germany
+          </div>
+        </section>
 
-      <!-- Skills -->
+        <!-- Skills -->
 
-      <section>
-        <!-- programming skills -->
-        <h4 class="font-weight-light">Programming skills</h4>
-        <div>
-          <button type="button" class="btn btn-success btn-sm">
-            Basic HTML
-          </button>
-          <button type="button" class="btn btn-success btn-sm">
-            GitHub novice
-          </button>
-          <button type="button" class="btn btn-success btn-sm">
-            Bit of Bootstrap
-          </button>
-          <button type="button" class="btn border btn-sm">
-            JavaScript
-          </button>
-        </div>
+        <section class="col-12 col-md-6 col-lg-8 align-self-center my-3">
+          <!-- programming skills -->
+          <h4 class="font-weight-light ml-1">Bootcamp skills</h4>
+          <div class="d-flex flex-wrap">
+            <button type="button" class="btn btn-success btn-sm flex-fill m-1">
+              Basic HTML
+            </button>
+            <button type="button" class="btn btn-success btn-sm flex-fill m-1">
+              GitHub novice
+            </button>
+            <button type="button" class="btn btn-success btn-sm flex-fill m-1">
+              Bit of Bootstrap
+            </button>
+            <button type="button" class="btn btn-success btn-sm flex-fill m-1">
+              getting better at remembering Shell codes
+            </button>
+            <button type="button" class="btn btn-success btn-sm flex-fill m-1">
+              Zoom user
+            </button>
+            <button type="button" class="btn btn-success btn-sm flex-fill m-1">
+              Slack
+            </button>
+            <button type="button" class="btn btn-success btn-sm flex-fill m-1">
+              VS Code
+            </button>
+          </div>
 
-        <!-- other skills -->
-        <h4 class="font-weight-light">Other skills</h4>
-        <div>
-          <button type="button" class="btn btn-success btn-sm">
-            Project management
-          </button>
-          <button type="button" class="btn btn-success btn-sm">
-            Coffee drinker
-          </button>
-          <button type="button" class="btn btn-success btn-sm">
-            Wellness pro
-          </button>
-          <button type="button" class="btn border btn-sm">
-            Water drinker
-          </button>
-        </div>
-      </section>
+          <!-- other skills -->
+          <h4 class="font-weight-light ml-1 mt-3">Other skills</h4>
+          <div class="d-flex flex-wrap">
+            <button type="button" class="btn btn-success btn-sm flex-fill m-1">
+              Project management
+            </button>
+            <button type="button" class="btn btn-success btn-sm flex-fill m-1">
+              Pro Coffee drinking skills
+            </button>
+            <button type="button" class="btn btn-success btn-sm flex-fill m-1">
+              Wellness
+            </button>
+          </div>
+        </section>
+      </div>
 
       <!-- contact -->
 
-      <address id="contact" class="bg-light">
+      <address class="bg-light border border-light border-rounded-lg p-2 my-3">
         <h4 class="font-weight-light">Contact information</h4>
-        <a
-          class="btn border btn-md bg-white shadow-sm"
-          href="mailto:svenja@wide.green"
-          role="button"
-          >Mail: svenja@wide.green</a
-        >
-        <a
-          class="btn border btn-md bg-white shadow-sm"
-          href="tel:+491704126302"
-          role="button"
-          >Phone: +49 170 412 630 2</a
-        >
-        <a class="btn border btn-md bg-white shadow-sm" href="#" role="button"
-          >Add to contacts</a
-        >
+        <div class="d-flex flex-wrap">
+          <a
+            class="btn border btn-md bg-white shadow-sm flex-fill"
+            href="mailto:svenja@wide.green"
+            role="button"
+            >Mail: svenja@wide.green</a
+          >
+          <a
+            class="btn border btn-md bg-white shadow-sm flex-fill"
+            href="tel:+491704126302"
+            role="button"
+            >Phone: +49 170 412 630 2</a
+          >
+          <a
+            class="btn border btn-md bg-white shadow-sm flex-fill"
+            href="#"
+            role="button"
+            >Add to contacts</a
+          >
+        </div>
       </address>
 
       <!-- social platforms -->
 
       <section class="row border-white">
-        <div class="card border-white" style="width: 200px;">
+        <div
+          class="col-12 col-sm-6 col-md-3 card border-white align-self-center"
+          style="width: 200px;"
+        >
           <img
             class="img-fluid flex-fill card-img-top"
             src="/img/github_logo.png"
@@ -136,7 +169,10 @@
             >
           </div>
         </div>
-        <div class="card border-white" style="width: 200px;">
+        <div
+          class="col-12 col-sm-6 col-md-3 card border-white align-self-center"
+          style="width: 200px;"
+        >
           <img
             class="img-fluid flex-fill card-img-top"
             src="/img/codepen_logo.png"
@@ -152,7 +188,10 @@
             >
           </div>
         </div>
-        <div class="card border-white" style="width: 200px;">
+        <div
+          class="col-12 col-sm-6 col-md-3 card border-white align-self-center"
+          style="width: 200px;"
+        >
           <img
             class="img-fluid flex-fill card-img-top"
             src="/img/linkedin_logo.png"
@@ -168,7 +207,10 @@
             >
           </div>
         </div>
-        <div class="card border-white" style="width: 200px;">
+        <div
+          class="col-12 col-sm-6 col-md-3 card border-white align-self-center"
+          style="width: 200px;"
+        >
           <img
             class="img-fluid flex-fill card-img-top"
             src="/img/indeed_logo.png"
@@ -188,18 +230,20 @@
 
       <!-- About me -->
 
-      <article>
-        <h4 class="font-weight-light">About me</h4>
-        <p>Looking for new challenges.</p>
-        <p>
-          After spending 14 years doing something fun, I'm now looking forward
-          to doing something meaningful and sustainable as well. And actually
-          earn some money.
-        </p>
+      <article class="row my-3">
+        <section class="col-12 col-md-6">
+          <h4 class="font-weight-light">About me</h4>
+          <p>Looking for new challenges.</p>
+          <p class="text-justify">
+            After spending 14 years doing something fun, I'm now looking forward
+            to doing something meaningful and sustainable as well. And actually
+            earn some money.
+          </p>
+        </section>
 
         <!-- CV -->
 
-        <section>
+        <section class="col-12 col-md-6">
           <h4 class="font-weight-light">CV</h4>
           <div class="border border-light border-rounded">
             <p class="lead mb-0">Web Development Bootcamp neuefische GmbH</p>
